@@ -1,0 +1,79 @@
+#zoom-gallery-outer {
+	width:120px;
+	float:left;
+	margin-right: 25px;
+}
+#zoom-gallery-outer li {
+	margin-bottom:10px;
+}
+#zoom-gallery-outer li:last-child {
+	margin-bottom: 0px;
+}
+#zoom-gallery-outer li img {
+	max-width: 100%;
+}
+#zoom-gallery-outer li i.typcn {
+	display:block;
+	margin:20px auto;
+	width: 40px;
+	height:40px;
+	font-size: 28px;
+	line-height: 28px;
+	vertical-align:middle;
+	color:#d8d8d8;
+	border: 5px solid #d8d8d8;
+	text-align:center;
+	border-radius: 20px;
+	padding-left:3px
+}
+#zoom-big-image {
+	margin: 0 0 0 125px;
+	overflow:hidden;
+}
+#zoom-big-image img {
+	max-width: 100%;
+}
+@media (max-width: 640px) {
+#zoom-gallery-outer {
+width: 100%;
+float:none;
+margin-bottom:10px;
+}
+#zoom-gallery-outer li {
+margin:0 5px 0 0;
+width: 100px;
+float:left;
+}
+#zoom-big-image {
+margin: 0 auto 15px;
+text-align:center;
+}
+#zoom-big-image img {
+ position: relative !important;
+}
+}
+#demo-container {
+	text-align:center;
+	position:fixed !important;
+	margin:-25px 0 0;
+}
+#dark_hover {
+	display:none;
+	z-index: 100;
+	opacity: 1;
+	margin:-20px 0 0 -15px;
+	background-color: #fff;
+	position: fixed;
+	width:100%;
+	height:100%;
+}
+.zoomWindowContainer {
+	z-index: 1;
+}
+.zoomLens { 
+	background:#fff !important; 
+	border-color:#ccc !important;
+	-webkit-transition: all 0.1s 0s ease;
+	-moz-transition: all 0.1s 0s ease;
+	-o-transition: all 0.1s 0s ease;
+}

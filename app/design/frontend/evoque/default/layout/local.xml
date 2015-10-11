@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <!--CSS-->
+            <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/bootstrap.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/bootstrap-xl.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/typicons.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/jquery.mCustomScrollbar.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/bootstrap-select.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/zoom.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/jcarousel.basic.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/isotope.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/megamenu.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/nouislider.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/layerslider.css</name><params/></action>
+			<action method="addItem"><type>skin_css</type><name>css/jquery.fancybox.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/template.css</name><params/></action>
+            <action method="addItem" ifconfig="evoquecolors/general/custom_css"><type>skin_css</type><name>css/custom_changes.css</name><params/></action>
+
+            <!-- CSS IE -->
+            <action method="addCssIe"><css>css/styles-ie.css</css></action>
+
+            <!--JS-->
+            <action method="addItem"><type>js</type><name>etheme/evoque/html5shiv.js</name><params/><if>lt IE 9</if></action>
+            <action method="addItem"><type>js</type><name>etheme/evoque/respond.min.js</name><params/><if>lt IE 9</if></action>
+            <action method="addJs"><script>etheme/evoque/jquery-1.10.2.min.js</script></action>
+			<action method="addJs"><script>etheme/evoque/jquery.fancybox.js</script></action>
+            <action method="addJs"><script>etheme/evoque/jquery.fancybox-media.js</script></action>
+            <action method="addJs"><script>etheme/evoque/bootstrap.min.js</script></action>
+            <action method="addJs"><script>etheme/evoque/jquery.mousewheel.js</script></action>
+            <action method="addJs"><script>etheme/evoque/jquery.easing.1.3.js</script></action>
+            <action method="addJs"><script>etheme/evoque/bootstrap-select.js</script></action>
+            <action method="addJs"><script>etheme/evoque/jquery.mCustomScrollbar.concat.min.js</script></action>
+            <action method="addJs"><script>etheme/evoque/jquery.elevatezoom.js</script></action>
+            <action method="addJs"><script>etheme/evoque/jquery.isotope.min.js</script></action>
+            <action method="addJs"><script>etheme/evoque/jquery.nouislider.js</script></action>
+            
+            <action method="addJs"><script>etheme/evoque/retina-replace.js</script></action>
+            <action method="addJs"><script>etheme/evoque/custom.js</script></action>
+        </reference>
+
+        <reference name="right">
+            <action method="unsetChild"><name>right.poll</name></action>
+            <action method="unsetChild"><name>catalog.compare.sidebar</name></action>
+            <action method="unsetChild"><name>right.reports.product.viewed</name></action>
+            <action method="unsetChild"><name>wishlist</name></action>
+        </reference>
+
+
+
+        <reference name="left">
+            <action method="unsetChild"><name>currency</name></action>
+            <action method="unsetChild"><name>footer_newsletter</name></action>
+            <action method="unsetChild"><name>left.permanent.callout</name></action>
+            <action method="unsetChild"><name>left.newsletter</name></action>
+            <action method="unsetChild"><name>tags_popular</name></action>
+            <action method="unsetChild"><name>catalog.leftnav</name></action>
+
+
+            <block type="reports/product_viewed"  name="right.reports.product.viewed" template="reports/product_viewed.phtml" />
+            <block type="wishlist/customer_sidebar" name="wishlist_sidebar" as="wishlist"  template="wishlist/sidebar.phtml" />
+
+            <block type="catalog/product_compare_sidebar"  name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/>
+
+            <block type="poll/activePoll" name="pollleft">
+                <action method="setPollTemplate"><template>poll/active.phtml</template><type>poll</type></action>
+                <action method="setPollTemplate"><template>poll/result.phtml</template><type>results</type></action>
+            </block>
+
+            <block type="tag/popular" name="tags_popular" template="tag/popular.phtml" after="ev_sidebar_blog"/>
+
+            <block type="evoqueconfig/navigation" name="ev_leftmenu" template="evoque/leftmenu.phtml" before="-">
+                <block type="cms/block" name="ev_promotion_under_catalog">
+                    <action method="setBlockId"><block_id>ev_promotion_under_catalog</block_id></action>
+                </block>
+            </block>
+
+
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/navigation"><name>ev_leftmenu</name></action>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/navigation"><name>tags_popular</name></action>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/community_poll"><name>pollleft</name></action>
+
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/viewed"><name>right.reports.product.viewed</name></action>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/compare"><name>catalog.compare.sidebar</name></action>
+            <action method="unsetChild" ifconfig="evoqueconfig/options/catalog_mode"><name>catalog.compare.sidebar</name></action>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/wishlist"><name>wishlist</name></action>
+
+
+
+
+
+
+
+        </reference>
+
+        <!--HEADER-->
+        <reference name="header">
+
+            <block type="directory/currency" name="currency" template="page/switch/currency.phtml" />
+            <block type="page/switch" name="store_switcher" as="store_switcher" template="page/switch/stores.phtml"/>
+            <block type="checkout/cart_sidebar" name="topcart" as="topcart" template="checkout/cart/topcart.phtml"/>
+
+
+
+            <action ifconfig="evoquelayout/sidebar/currency" method="unsetChild"><name>currency</name></action>
+            <action method="unsetChild" ifconfig="evoqueconfig/options/catalog_mode"><name>currency</name></action>
+            <action ifconfig="evoquelayout/sidebar/language" method="unsetChild"><name>store_language</name></action>
+            <action ifconfig="evoquelayout/sidebar/store" method="unsetChild"><name>store_switcher</name></action>
+            <action ifconfig="evoquelayout/sidebar/my_cart" method="unsetChild"><name>topcart</name></action>
+            <action method="unsetChild" ifconfig="evoqueconfig/options/catalog_mode"><name>topcart</name></action>
+            <action ifconfig="evoquelayout/sidebar/search" method="unsetChild"><name>topSearch</name></action>
+            <action ifconfig="evoquelayout/sidebar/toplinks" method="unsetChild"><name>topLinks</name></action>
+            <action method="unsetChild" ifconfig="evoqueconfig/options/catalog_mode"><name>topLinks</name></action>
+
+
+            <block type="evoqueconfig/megamenu" name="ev_megamenu" template="evoque/megamenu.phtml">
+                <block type="cms/block" name="ev_megamenu_right_html">
+                    <action method="setBlockId"><block_id>ev_megamenu_right_html</block_id></action>
+                </block>
+            </block>
+            <action ifconfig="evoqueconfig/megamenu/megamenu" method="unsetChild"><name>ev_megamenu</name></action>
+
+
+
+
+        </reference>
+        <!--HEADER END-->
+
+        <!--FOOTER-->
+        <reference name="footer">
+            <block type="newsletter/subscribe" name="footer.newsletter" as="footer_newsletter" template="newsletter/subscribe.phtml"/>
+
+            <block type="cms/block" name="ev_find_us">
+                <action method="setBlockId"><block_id>ev_find_us</block_id></action>
+            </block>
+
+            <block type="cms/block" name="ev_footer_links">
+                <action method="setBlockId"><block_id>ev_footer_links</block_id></action>
+            </block>
+
+            <block type="cms/block" name="ev_footer_payments">
+                <action method="setBlockId"><block_id>ev_footer_payments</block_id></action>
+            </block>
+
+
+            <action ifconfig="evoquelayout/sidebar/newsletter" method="unsetChild"><name>footer_newsletter</name></action>
+            <action ifconfig="evoquelayout/sidebar/find_us" method="unsetChild"><name>ev_find_us</name></action>
+            <action ifconfig="evoquelayout/sidebar/footer_links" method="unsetChild"><name>ev_footer_links</name></action>
+        </reference>
+        <!--FOOTER EOF-->
+
+        <reference name="top.links">
+            <block type="evoqueconfig/comparelink" name="compare_link"/>
+            <action method="addLinkBlock" ifconfig="evoqueconfig/options/show_compare_link_in_header">
+                <blockName>compare_link</blockName>
+            </action>
+        </reference>
+
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+            <block type="core/template" name="ev_left_navigation" template="evoque/left_navigation.phtml" />
+        </reference>
+
+
+
+
+
+
+
+    </default>
+
+
+
+    <cms_index_index>
+        <reference name="root">
+            <!--SLIDERS-->
+            <block type="core/template" name="slider" as="slider" template="evoque/slider/slider.phtml">
+                <block  type="evoqueflex/evoqueflex" name="flex" as="flex" template="evoque/slider/flex.phtml" />
+                <block type="evoqueparallax/evoqueparallax" name="parallax" as="parallax" template="evoque/slider/parallax.phtml"></block>
+            </block>
+        </reference>
+        <reference name="left">
+            <block type="cms/block" name="ev_sidebar_about" after="ev_leftmenu">
+                <action method="setBlockId"><block_id>ev_sidebar_about</block_id></action>
+            </block>
+
+            <block type="cms/block" name="ev_sidebar_blog" after="ev_sidebar_about">
+                <action method="setBlockId"><block_id>ev_sidebar_blog</block_id></action>
+            </block>
+
+            <block type="cms/block" name="ev_sidebar_contacts" after="ev_social">
+                <action method="setBlockId"><block_id>ev_sidebar_contacts</block_id></action>
+            </block>
+
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/about"><name>ev_sidebar_about</name></action>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/blog"><name>ev_sidebar_blog</name></action>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/contact"><name>ev_sidebar_contacts</name></action>
+
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/about"><name>ev_sidebar_about</name></action>
+
+            <remove name="right.reports.product.viewed"/>
+            <remove name="catalog.compare.sidebar"/>
+            <!-- <action method="unsetChild"><name>right.reports.product.viewed</name></action>
+            <action method="unsetChild"><name>catalog.compare.sidebar</name></action>-->
+
+            <block type="core/text_list" name="ev_social" after="tags_popular">
+                <block type="core/template" name="twitter" as="ev_twitter_feeds" template="evoque/twitter_feeds.phtml"/>
+                <block type="core/template" name="ev_facebook" template="evoque/facebook_fan_box.phtml" />
+
+                <action method="unsetChild" ifconfig="evoquelayout/sidebar/socials_twitter"><name>ev_twitter_feeds</name></action>
+                <action method="unsetChild" ifconfig="evoquelayout/sidebar/socials_fb"><name>ev_facebook</name></action>
+            </block>
+
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/socials"><name>ev_social</name></action>
+
+        </reference>
+    </cms_index_index>
+
+
+
+    <catalog_category_default translate="label">
+        <reference name="left">
+            <action method="unsetChild"><name>currency</name></action>
+            <action method="unsetChild"><name>catalog.shopby</name></action>
+
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/shop_by"><name>catalog.leftnav</name></action>
+
+            <block type="cms/block" name="ev_sidebar_custom_html">
+                <action method="setBlockId"><block_id>ev_sidebar_custom_html</block_id></action>
+            </block>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/custom_html"><name>ev_sidebar_custom_html</name></action>
+        </reference>
+
+
+    </catalog_category_default>
+
+    <catalog_category_layered translate="label">
+        <reference name="left">
+            <action method="unsetChild"><name>currency</name></action>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/shop_by"><name>catalog.leftnav</name></action>
+            <block type="cms/block" name="ev_sidebar_custom_html">
+                <action method="setBlockId"><block_id>ev_sidebar_custom_html</block_id></action>
+            </block>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/custom_html"><name>ev_sidebar_custom_html</name></action>
+        </reference>
+    </catalog_category_layered>
+
+    <catalogsearch_advanced_index translate="label">
+        <reference name="left">
+            <action method="unsetChild"><name>right_currency</name></action>
+        </reference>
+    </catalogsearch_advanced_index>
+
+    <catalogsearch_result_index translate="label">
+        <reference name="left">
+            <action method="unsetChild"><name>currency</name></action>
+        </reference>
+    </catalogsearch_result_index>
+
+    <catalog_product_view>
+        <reference name="content">
+
+
+
+            <reference name="product.info">
+                <action method="unsetChild"><name>upsell_products</name></action>
+                <block type="cms/block" name="ev_sidebar_custom_html_in_content_product">
+                    <action method="setBlockId"><block_id>ev_sidebar_custom_html_in_content_product</block_id></action>
+                </block>
+                <block type="cms/block" name="ev_product_share">
+                    <action method="setBlockId"><block_id>ev_product_share</block_id></action>
+                </block>
+
+
+                <block type="review/product_view_list" name="reviews" as="reviews" template="review/product/view/list.phtml">
+                    <block type="review/form" name="product.review.form" as="review_form">
+                        <block type="page/html_wrapper" name="product.review.form.fields.before" as="form_fields_before" translate="label">
+                            <label>Review Form Fields Before</label>
+                            <action method="setMayBeInvisible"><value>1</value></action>
+                        </block>
+                    </block>
+                </block>
+
+                <action method="setTemplate" ifconfig="evoquelayout/options/product_page"><template>catalog/product/view_alternative.phtml</template></action>
+                <reference name="product.info.media">
+                    <action method="setTemplate" ifconfig="evoquelayout/options/product_page"><template>evoque/product/view/media_alternative.phtml</template></action>
+                </reference>
+            </reference>
+        </reference>
+
+
+        <reference name="right">
+            <action method="unsetChild"><name>catalog.product.related</name></action>
+        </reference>
+        <reference name="left">
+            <action method="insert"><blockName>catalog.product.related</blockName></action>
+            <action method="insert"><child>product.info.upsell</child></action>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/related"><name>catalog.product.related</name></action>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/upsells"><name>product.info.upsell</name></action>
+
+            <block type="cms/block" name="ev_sidebar_custom_html_product">
+                <action method="setBlockId"><block_id>ev_sidebar_custom_html_product</block_id></action>
+            </block>
+            <action method="unsetChild" ifconfig="evoquelayout/sidebar/custom_html_product"><name>ev_sidebar_custom_html_product</name></action>
+            <action method="unsetChild"><name>pollleft</name></action>
+            <action method="unsetChild"><name>tags_popular</name></action>
+
+            <block before="-" type="catalog/product_view_media" name="ev_product_gallery" as="ev_product_gallery" template="evoque/product/view/media_gallery.phtml"/>
+            <action method="unsetChild" ifconfig="evoquelayout/options/product_page"><name>ev_product_gallery</name></action>
+
+
+        </reference>
+
+    </catalog_product_view>
+
+    <customer_account>
+        <reference name="left">
+            <action method="unsetChild"><name>cart_sidebar</name></action>
+        </reference>
+    </customer_account>
+
+</layout>

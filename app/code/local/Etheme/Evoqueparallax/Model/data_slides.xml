@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<evoque>
+    <slides>
+        <slide1>
+        <![CDATA[
+
+            <div class="ls-layer link" style="slidedirection: right; slidedelay: 8000;">
+                  <img src="{{BASE}}media/etheme/evoque/evoqueparallax/slide1.jpg" class="ls-s1 nofade" style="position: absolute; top:0; left: 0; slidedirection:  fade ; slideoutdirection :fade; durationin : 100; durationout : 8000; easingin : easeInSine; easingout : easeOutSine; delayin : 0; delayout : 0; showuntil :  100; rotateout : 0; scaleout : 1.2;">
+                  <div class="ls-s2 caption" style="top:170px; left: 1412px; slidedirection : right; slideoutdirection : right; durationin : 1200; durationout : 1500; easingin : easeOutBack; easingout : easeOutSine; showuntil : 7500; delayin : 0; scalein : 1; scaleout : 1; rotateout : 90;"></div>
+                  <div class="ls-s3 text1" style="top:220px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 1200; scalein : 0.1; scaleout : 1;">Those who cannot </div>
+                  <div class="ls-s3 text1" style="top:270px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 1600; scalein : 0.1; scaleout : 1;">change their minds </div>
+                  <div class="ls-s3 text1" style="top:320px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 2000; scalein : 0.1; scaleout : 1;">cannot change</div>
+                  <div class="ls-s3 text1" style="top:370px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 2400; scalein : 0.1; scaleout : 1;">anything.</div>
+                  <div class="ls-s4 text2" style="top:450px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 2600; scalein : 0.1; scaleout : 1;">Bernard Shaw</div>
+            </div>
+
+        ]]>
+        </slide1>
+        <slide2>
+            <![CDATA[
+                 <div class="ls-layer link" style="slidedirection: right; slidedelay: 8000;">
+                  <img src="{{BASE}}media/etheme/evoque/evoqueparallax/slide2.jpg" class="ls-s1 nofade" style="position: absolute; top:0; left: 0; slidedirection:  fade ; slideoutdirection :fade; durationin : 100; durationout : 8000; easingin : easeInSine; easingout : easeOutSine; delayin : 0; delayout : 0; showuntil :  100; rotateout : 0; scaleout : 1.2;">
+                  <div class="ls-s2 caption" style="top:170px; left: 1412px; slidedirection : bottom; slideoutdirection : right; durationin : 1200; durationout : 1500; easingin : easeOutBack; easingout : easeOutSine; showuntil : 7500; delayin : 0; scalein : 1; scaleout : 1; rotateout : 90;"></div>
+                  <div class="ls-s3 text1" style="top:220px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 1200; scalein : 0.1; scaleout : 1;">Fashion is a form of </div>
+                  <div class="ls-s3 text1" style="top:270px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 1600; scalein : 0.1; scaleout : 1;">ugliness so intolerable</div>
+                  <div class="ls-s3 text1" style="top:320px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 2000; scalein : 0.1; scaleout : 1;">that we have to alter </div>
+                  <div class="ls-s3 text1" style="top:370px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 2400; scalein : 0.1; scaleout : 1;">it every six months.</div>
+                  <div class="ls-s4 text2" style="top:450px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 2600; scalein : 0.1; scaleout : 1;">Oscar Wilde</div>
+                </div>
+            ]]>
+        </slide2>
+        <slide3>
+            <![CDATA[
+                 <div class="ls-layer link" style="slidedirection: right; slidedelay: 8000;">
+                  <img src="{{BASE}}media/etheme/evoque/evoqueparallax/slide3.jpg" class="ls-s1 nofade" style="position: absolute; top:0; left: 0; slidedirection:  fade ; slideoutdirection :fade; durationin : 100; durationout : 8000; easingin : easeInSine; easingout : easeOutSine; delayin : 0; delayout : 0; showuntil :  100; rotateout : 0; scaleout : 1.2;">
+                  <div class="ls-s2 caption" style="top:170px; left: 1412px; slidedirection : top; slideoutdirection : right; durationin : 1200; durationout : 1500; easingin : easeOutBack; easingout : easeOutSine; showuntil : 7500; delayin : 0; scalein : 1; scaleout : 1; rotateout : 90;"></div>
+                  <div class="ls-s3 text1" style="top:210px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 1200; scalein : 0.1; scaleout : 1;">The finest clothing </div>
+                  <div class="ls-s3 text1" style="top:255px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 1600; scalein : 0.1; scaleout : 1;">made is a person's skin, </div>
+                  <div class="ls-s3 text1" style="top:300px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 2000; scalein : 0.1; scaleout : 1;">but, of course, society </div>
+                  <div class="ls-s3 text1" style="top:345px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 2400; scalein : 0.1; scaleout : 1;">demand something more </div>
+                  <div class="ls-s3 text1" style="top:390px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 2400; scalein : 0.1; scaleout : 1;">than this.</div>
+                  <div class="ls-s4 text2" style="top:455px; left: 1450px; slidedirection : fade; slideoutdirection : fade; durationin : 500; durationout : 500; easingin : easeOutQuint; easingout : easeOutSine; showuntil : 5000; delayin : 2600; scalein : 0.1; scaleout : 1;">Mark Twain </div>
+                </div>
+            ]]>
+        </slide3>
+
+    </slides>
+</evoque>

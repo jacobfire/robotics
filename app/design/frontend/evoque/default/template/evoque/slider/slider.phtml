@@ -1,0 +1,20 @@
+<?php if(Mage::getStoreConfig('evoquelayout/options/slideshow'))
+{
+    $slider=Mage::getStoreConfig('evoquelayout/options/slider');
+    if($slider)
+    {
+        echo $this->getChildHtml($slider);
+    }
+}
+elseif($id=Mage::getStoreConfig('evoquelayout/options/slideshow_static_block'))
+{
+    echo '<div class="flexslider-container hidden-xs hidden-sm">';
+    echo $this->getLayout()->createBlock("cms/block")->setBlockId($id)->toHtml();
+    echo '</div>';
+}
+?>
+
+
+
+
+

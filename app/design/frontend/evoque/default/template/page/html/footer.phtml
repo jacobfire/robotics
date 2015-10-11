@@ -1,0 +1,54 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div class="divider in_footer"> </div>
+<div id="MoveFromNav" class="visible-xs in_footer"></div>
+<div class="row">
+    <?php echo $this->getChildHtml('footer_newsletter');
+        if(Mage::getStoreConfig('evoquelayout/sidebar/newsletter') && ($id=Mage::getStoreConfig('evoquelayout/sidebar/newsletter_block')))
+        {
+            echo $this->getLayout()->createBlock("cms/block")->setBlockId($id)->toHtml();
+        }
+        echo $this->getChildHtml('ev_find_us')
+    ?>
+</div>
+<div class="divider"> </div>
+<?php if(!Mage::getStoreConfig('evoquelayout/sidebar/footer_links') && !Mage::getStoreConfig('evoquelayout/sidebar/footer_links_visible')):?>
+<div id="BottomLinksButton" class="closed"><i class="typcn typcn-chevron-right rotate-90 closed"></i><i class="typcn typcn-chevron-left rotate-90 opened"></i></div>
+<?php endif; ?>
+<div class="row <?php if(Mage::getStoreConfig('evoquelayout/sidebar/footer_links_visible')) echo 'visible_links'?>" id="BottomLinks">
+    <?php echo $this->getChildHtml('ev_footer_links')?>
+</div>
+<div class="row" id="footer">
+    <div class="col-md-12">
+        <span class="payment_icons">
+           <?php echo $this->getChildHtml('ev_footer_payments')?>
+        </span>
+        <span class="text"><?php echo $this->getCopyright() ?></span>
+    </div>
+</div>
+
+

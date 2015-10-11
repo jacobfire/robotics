@@ -1,0 +1,20 @@
+<?php if (($_productCollection=$this->getProductCollection()) && $_productCollection->getSize()): ?>
+<!--PRODUCTS CAROUSEL-->
+<h2 class="font2"><?php echo $this->getBlockName(); ?></h2>
+<div class="flexslider-product">
+    <ul class="products products_scroll row">
+        <?php foreach ($_productCollection as $_product): ?>
+        <?php  if(!$_product->isSaleable() && !Mage::getStoreConfig('cataloginventory/options/show_out_of_stock'))continue; ?>
+        <?php
+        $widthBig=270;
+        $heightBig=320;
+        $price=$this->getPriceHtml($_product, true);
+        ?>
+        <!--PRODUCT-->
+        <?php  echo Mage::helper('evoqueconfig')->getProductHtml($_product,$this,$widthBig,$heightBig,$price,'li','',true)?>
+        <!--PRODUCT EOF-->
+        <?php endforeach ?>
+    </ul>
+</div>
+<!--PRODUCTS CAROUSEL END-->
+<?php endif; ?>

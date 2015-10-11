@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<dresscode>
+     <blocks>
+         <block>
+             <title>Evoque Custom Toplinks</title>
+              <identifier>ev_instead_toplinks</identifier>
+              <content>
+                    <![CDATA[
+<div class="btn-group">
+            <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                       <span class="title"> Lorem Ipsum</span>
+                       <span class="font1">Dolor ipsumt</span>
+                      <span class="caret"> <img width="5" height="3" alt="" src="{{media url='wysiwyg/caret.png'}}"> </span>
+            </button>
+
+            <ul class="dropdown-menu">
+                     <li><a href="#">My Link 1</a></li>
+                     <li><a href="#">My Link 2</a></li>
+                     <li><a href="#">My Link 3</a></li>
+                     <li><a href="#">My Link 4</a></li>
+            </ul>
+</div>
+]]>
+              </content>
+              <is_active>1</is_active>
+         </block>
+
+         <block>
+             <title>Custom block instead of Newsletter</title>
+             <identifier>ev_instead_newsletter</identifier>
+             <content>
+                 <![CDATA[
+<div class="col-md-6">
+        <h2 class="font2">Custom Title</h2>
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+         <block>
+             <title>Evoque Find Us (footer)</title>
+             <identifier>ev_find_us</identifier>
+             <content>
+                 <![CDATA[
+<div class="col-md-6">
+        <h2 class="font2">Find us on</h2>
+        <div class="social_icons">
+        <a href="#"><i class="typcn typcn-social-facebook-circular"></i> </a>
+        <a href="#"><i class="typcn typcn-social-twitter-circular"></i> </a>
+        <a href="#"><i class="typcn typcn-social-linkedin-circular"></i> </a>
+        <a href="#"><i class="typcn typcn-social-pinterest-circular"></i> </a>
+        <a href="#"> <i class="typcn typcn-social-vimeo-circular"></i> </a>
+        </div>
+    </div>
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+         <block>
+             <title>Evoque Footer Links</title>
+             <identifier>ev_footer_links</identifier>
+             <content>
+                 <![CDATA[
+            <div class="col-md-3 col-sm-6">
+                <h6 class="visible-xs visible-sm">Title 1</h6>
+                <ul>
+                    <li><a href="{{store direct_url='ev-about-us'}}">About</a> </li>
+                    <li><a href="{{store direct_url='ev-delivery'}}">Delivery</a> </li>
+                    <li><a href="{{store direct_url='ev-privacy-policy'}}">Privacy Policy</a> </li>
+                    <li><a href="{{store direct_url='ev-terms-and-conditions'}}">Terms &amp; Conditions</a> </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h6 class="visible-xs visible-sm">Title 2</h6>
+                <ul>
+                    <li><a href="{{store direct_url='contacts'}}">Contact Us </a> </li>
+                    <li><a href="{{store direct_url='returns'}}">Returns</a> </li>
+                    <li><a href="{{store direct_url='catalog/seo_sitemap/category'}}">Site Map </a> </li>
+                    <li><a href="{{store direct_url='catalogsearch/term/popular'}}">Search Terms </a> </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h6 class="visible-xs visible-sm">Title 3</h6>
+                <ul>
+                    <li><a href="{{store direct_url='customer/account'}}">My Account </a> </li>
+                    <li><a href="{{store direct_url='sales/guest/form'}}">Order History</a> </li>
+                    <li><a href="{{store direct_url='wishlist'}}">Wish List</a> </li>
+                    <li><a href="{{store direct_url='newsletter'}}">Newsletter</a> </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h6 class="visible-xs visible-sm">Title 4</h6>
+                <ul>
+                    <li><a href="#">Online support </a></li>
+                    <li><a href="#">Help &amp; FAQs</a></li>
+                    <li><a href="#">Call Center</a></li>
+                </ul>
+            </div>
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+
+         <block>
+             <title>Evoque Footer Payments</title>
+             <identifier>ev_footer_payments</identifier>
+             <content>
+                 <![CDATA[
+             <img data-retina="true" src="{{media url='wysiwyg/payment1.png'}}" alt="">
+             <img data-retina="true" src="{{media url='wysiwyg/payment2.png'}}" alt="">
+             <img data-retina="true" src="{{media url='wysiwyg/payment3.png'}}" alt="">
+             <img data-retina="true" src="{{media url='wysiwyg/payment4.png'}}" alt="">
+             <img data-retina="true" src="{{media url='wysiwyg/payment5.png'}}" alt="">
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+         <block>
+             <title>Evoque Subscribe Now (sidebar)</title>
+             <identifier>ev_promotion_under_catalog</identifier>
+             <content>
+                 <![CDATA[
+             <div class="subscribe_box hidden-xs">
+            <div class="imageContainer">
+                <a href="#">
+                    <img src="{{media url='wysiwyg/subscribe_img.jpg'}}" alt="">
+                    <span class="shadow_bottom"></span>
+                </a>
+            </div>
+            <a href="#"></a>
+            <h5 >Subscribe now</h5>
+            <div class="font2">
+                <em>Save 50% and receive<br>
+                a FREE gift</em></div>
+           </div>
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+
+         <block>
+             <title>Evoque Sidebar About (sidebar)</title>
+             <identifier>ev_sidebar_about</identifier>
+             <content>
+                 <![CDATA[
+             <h4 class="font2"><i class="typcn typcn-edit"></i>About</h4>
+                        Praesent vitae dui. Morbi id tellus. Cum sociis natoque penatibus et magnis dis ridiculus mus. Maecenas eu enim in lorem scelerisque auctor.Praesent vitae dui. Morbi id tellus. Cum sociis natoque penatibus et magnis dis ridiculus mus. Maecenas eu enim in lorem scelerisque auctor.Praesent vitae dui. Morbi id tellus. Cum sociis natoque penatibus et magnis dis ridiculus mus. Maecenas eu enim in lorem scelerisque auctor.
+
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+         <block>
+             <title>Evoque Sidebar Blog (sidebar)</title>
+             <identifier>ev_sidebar_blog</identifier>
+             <content>
+                 <![CDATA[
+                        <h4 class="font2"><i class="typcn typcn-edit"></i>Blog posts</h4>
+                        <div class="blog_meta">11:47 PM | AUGUST 27, 2013 <span class="author"><a href="#">by Admin</a></span></div>
+                        <h5 class="font2">Sed diam nonumy </h5>
+                        <div class="blog_image"> <img src="{{media url='wysiwyg/blog_img1.jpg'}}" alt="" class="img-responsive"> </div>
+                        <div class="blog_text">Praesent vitae dui. Morbi id tellus. Cum sociis natoque penatibus et magnis dis ridiculus mus. Maecenas eu enim in lorem scelerisque auctor... <a href="#">more</a></div>
+                        <a href="#" class="btn btn-default btn-light"> all posts</a>
+                        <div class="divider divider-sm"></div>
+                        <h4 class="font2"><i class="typcn typcn-calender-outline"></i> News</h4>
+                        <div class="public_meta">11:47 PM | AUGUST 27, 2013 <span class="author"><a href="#">by Admin</a></span></div>
+                        <h5 class="font2">Labore diam</h5>
+                        <div class="blog_image"> <img src="{{media url='wysiwyg/blog_img2.jpg'}}" alt="" class="img-responsive"> </div>
+                        <div class="blog_text">Maecenas eu enim in sed lorem scelerisque... <a href="#">more</a></div>
+                        <a href="#" class="btn btn-default btn-light"> all News</a>
+
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+
+         <block>
+             <title>Evoque Contacts (sidebar)</title>
+             <identifier>ev_sidebar_contacts</identifier>
+             <content>
+                 <![CDATA[
+                        <h4 class="font2"><i class="typcn typcn-mail"></i> Contacts</h4>
+                        <div class="map hidden-sm hidden-xs">
+                            <iframe style="width:100%; height:300px; margin:0; border:0; overflow:hidden;" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=LA+Aurora&amp;aq=&amp;sll=39.762235,-104.98827&amp;sspn=0.092238,0.209255&amp;ie=UTF8&amp;t=m&amp;st=112334869561858955379&amp;rq=1&amp;ev=zi&amp;split=1&amp;hq=LA&amp;hnear=%D0%90%D0%B2%D1%80%D0%BE%D1%80%D0%B0,+%D0%90%D1%80%D0%B0%D0%BF%D0%B0%D1%85%D0%BE,+%D0%9A%D0%BE%D0%BB%D0%BE%D1%80%D0%B0%D0%B4%D0%BE&amp;fll=39.757286,-104.986639&amp;fspn=0.046122,0.104628&amp;ll=39.775957,-104.899006&amp;spn=0.046176,0.072956&amp;z=13&amp;output=embed"></iframe>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="typcn typcn-home"></i> 9863 - 9867 Mill Road, Cambridge, MG09 99HT</li>
+                            <li class="list-group-item"><i class="typcn typcn-phone"></i> 1 234 567 8900</li>
+                            <li class="list-group-item"><i class="typcn typcn-device-phone"></i> 1 234 567 8900</li>
+                            <li class="list-group-item"><i class="typcn typcn-at"></i> <a href="mailto:info@gvac.com">mailto:info@gvac.com</a></li>
+                            <li class="list-group-item"><i class="typcn typcn-social-skype"></i> evoque.call</li>
+                        </ul>
+
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+
+
+
+         <block>
+             <title>Evoque Custom Html (sidebar)</title>
+             <identifier>ev_sidebar_custom_html</identifier>
+             <content>
+                 <![CDATA[
+            <h4 class="font2">Custom Block</h4>
+            <p style="color:#575757">Lorem ipsum dolor amet, consectetuer adiscing elit nec, rhoncus eget, laoreet sit amet, nunc. Ut sit amet turpis. In est arcu eu.</p>
+            <br>
+            <div class="text-center"> <img src="{{media url='wysiwyg/custom_block_img.jpg'}}" alt="" class="shadow"> </div>
+
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+
+         <block>
+             <title>Evoque Custom Html for product page (sidebar)</title>
+             <identifier>ev_sidebar_custom_html_product</identifier>
+             <content>
+                 <![CDATA[
+            <h4 class="font2">Custom HTML
+              Block</h4>
+            <div class="custom_block">
+              <div class="promo_box">
+                <div class="pull-left"><i class="typcn typcn-tag"></i></div>
+                <span> <strong><a href="#">Special offer: 1+1=3</a></strong> <a href="3"><br>
+                Get a gift!</a></span> </div>
+              <div class="promo_box">
+                <div class="pull-left"><i class="typcn typcn-credit-card"></i></div>
+                <span> <strong><a href="#">Free Reward Card </a></strong> <a href="3"><br>
+                Worth $10, $50, $100.</a></span> </div>
+              <div class="promo_box">
+                <div class="pull-left"><i class="typcn typcn-group-outline"></i></div>
+                <span> <strong><a href="#">Join to our Club</a></strong> </span> </div>
+              <div class="promo_box">
+                <div class="pull-left"><i class="typcn typcn-globe-outline"></i></div>
+                <span> <strong><a href="#">Free shipping</a></strong></span> </div>
+            </div>
+
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+
+         <block>
+             <title>Evoque Custom html block in content (product accordion)</title>
+             <identifier>ev_sidebar_custom_html_in_content_product</identifier>
+             <content>
+                 <![CDATA[
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"> Custom html block in content<span class="arrowup"></span><span class="arrowdown"></span></a> </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+                </div>
+            </div>
+
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+
+
+         <block>
+             <title>Evoque Product Share links </title>
+             <identifier>ev_product_share</identifier>
+             <content>
+                 <![CDATA[
+            <div class="socialsplugins_wrapper">
+                    <div class="facebook_button">
+                        <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.web-flash-template.com%2F&amp;layout=button_count&amp;show_faces=false&amp;width=150&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=21&amp;locale=en_US" style="border:none; overflow:hidden; display:inline-block; width:90px; height:21px;" ></iframe>
+                    </div>
+                    <div class="twitter_button"> <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+
+              </div>
+
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+         <block>
+             <title>Evoque Contact Google Map (contact form page)</title>
+             <identifier>ev_contact_form_map</identifier>
+             <content>
+                 <![CDATA[
+            <iframe style="width:100%; height:350px; margin:0; border:0; overflow:hidden;" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=LA+Aurora&amp;aq=&amp;sll=39.762235,-104.98827&amp;sspn=0.092238,0.209255&amp;ie=UTF8&amp;t=m&amp;st=112334869561858955379&amp;rq=1&amp;ev=zi&amp;split=1&amp;hq=LA&amp;hnear=%D0%90%D0%B2%D1%80%D0%BE%D1%80%D0%B0,+%D0%90%D1%80%D0%B0%D0%BF%D0%B0%D1%85%D0%BE,+%D0%9A%D0%BE%D0%BB%D0%BE%D1%80%D0%B0%D0%B4%D0%BE&amp;fll=39.757286,-104.986639&amp;fspn=0.046122,0.104628&amp;ll=39.775957,-104.899006&amp;spn=0.046176,0.072956&amp;z=13&amp;output=embed"></iframe>
+
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+         <block>
+             <title>Evoque Contact Info (contact form page)</title>
+             <identifier>ev_contact_form_info</identifier>
+             <content>
+                 <![CDATA[
+            <ul class="list-group">
+            <li class="list-group-item"><i class="typcn typcn-home"></i> 9863 - 9867 Mill Road, <br>
+                Cambridge, MG09 99HT</li>
+            <li class="list-group-item"><i class="typcn typcn-phone"></i> 1 234 567 8900<br>
+                <i class="typcn typcn-device-phone"></i> 1 234 567 8900</li>
+            <li class="list-group-item"><i class="typcn typcn-at"></i> <a href="mailto:info@gvac.com">mailto:info@gvac.com</a><br>
+                <i class="typcn typcn-social-skype"></i> <a href="#">evoque.call</a></li>
+        </ul>
+
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+
+
+         <block>
+             <title>Evoque Megamenu Custom html (right)</title>
+             <identifier>ev_megamenu_right_html</identifier>
+             <content>
+                 <![CDATA[
+            <div><img src="{{media url='wysiwyg/custom_img.jpg'}}" alt=""> <img src="{{media url='wysiwyg/custom_img1.jpg'}}" alt=""></div>
+                    <h6>CUSTOM BLOCK</h6>
+                    <div>This is a HTML block; you can create it via admin panel. There are many blocks like this on site. They are created especially to set to everybody's preferences. If you have any questions please make a request via our contact form</div>
+
+]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+
+         <block>
+             <title>Evoque Brands</title>
+             <identifier>ev_brands</identifier>
+             <content>
+                 <![CDATA[
+                <h2 class="font2">Brands </h2>
+                <div id="brands">
+                  <div class="products_scroll brands_scroll">
+                      <a href="#"><img src="{{media url='wysiwyg/brand1_.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand2_.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand3_.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand4_.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand5_.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand6_.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand1_.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand2_.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand3_.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand4_.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand5_.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand6_.png'}}"></a>
+                  </div>
+                </div>]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+
+         <block>
+             <title>Evoque Brands (dark)</title>
+             <identifier>ev_brands_dark</identifier>
+             <content>
+                 <![CDATA[
+                <h2 class="font2">Brands</h2>
+                <div id="brands">
+                  <div class="products_scroll brands_scroll">
+                      <a href="#"><img src="{{media url='wysiwyg/brand1.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand2.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand3.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand4.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand5.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand6.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand1.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand2.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand3.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand4.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand5.png'}}"></a>
+                      <a href="#"><img src="{{media url='wysiwyg/brand6.png'}}"></a>
+                  </div>
+                </div>
+                ]]>
+             </content>
+             <is_active>1</is_active>
+         </block>
+    </blocks>
+</dresscode>
+

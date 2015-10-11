@@ -1,0 +1,82 @@
+<?php
+/**
+ * @version   1.0 14.08.2012
+ * @author    TonyEcommerce http://www.TonyEcommerce.com <support@TonyEcommerce.com>
+ * @copyright Copyright (c) 2012 TonyEcommerce
+ */
+
+class Etheme_Evoqueparallax_Block_Adminhtml_Evoqueparallax_Edit_Tab_Form extends Mage_Adminhtml_Block_Widget_Form
+{
+  protected function _prepareForm()
+  {
+      $form = new Varien_Data_Form();
+      $this->setForm($form);
+      $fieldset_slide = $form->addFieldset('evoqueparallax_form_2', array('legend'=>Mage::helper('evoqueparallax')->__('For advanced user, leave it empty to switch on next options')));
+      //$fieldset = $form->addFieldset('evoqueparallax_form', array('legend'=>Mage::helper('evoqueparallax')->__('Create your parallax slide by preset options (only if you did not fill the "Slide HTML code")')));
+
+
+	  $data = array();
+	  if (Mage::getSingleton('adminhtml/session')->getevoqueparallaxData())
+      {
+	  	$data = Mage::getSingleton('adminhtml/session')->getevoqueparallaxData();
+	  } elseif ( Mage::registry('evoqueparallax_data') ) {
+		$data = Mage::registry('evoqueparallax_data')->getData();
+	  }
+
+
+      if (!Mage::app()->isSingleStoreMode()) {
+          $fieldset_slide->addField('store_id', 'multiselect', array(
+              'name' => 'stores[]',
+              'label' => Mage::helper('evoqueparallax')->__('Store View'),
+              'title' => Mage::helper('evoqueparallax')->__('Store View'),
+              'required' => true,
+              'values' => Mage::getSingleton('adminhtml/system_store')
+                  ->getStoreValuesForForm(false, true),
+          ));
+      }
+      else {
+          $fieldset_slide->addField('store_id', 'hidden', array(
+              'name' => 'stores[]',
+              'value' => Mage::app()->getStore(true)->getId()
+          ));
+      }
+
+      $fieldset_slide->addField('link', 'text', array(
+          'label'     => Mage::helper('evoqueparallax')->__('Link'),
+          'required'  => false,
+          'name'      => 'link',
+          'index'      => 'link',
+      ));
+
+      $fieldset_slide->addField('slide_html_code', 'textarea', array(
+          'label'     => Mage::helper('evoqueparallax')->__('Slide HTML code'),
+          'required'  => false,
+          'name'      => 'slide_html_code',
+          'index'      => 'slide_html_code',
+      ));
+
+      $fieldset_slide->addField('status', 'select', array(
+          'label'     => Mage::helper('evoqueparallax')->__('Status'),
+          'name'      => 'status',
+          'values'    => array(
+              array(
+                  'value'     => 1,
+                  'label'     => Mage::helper('evoqueparallax')->__('Active'),
+              ),
+              array(
+                  'value'     => 2,
+                  'label'     => Mage::helper('evoqueparallax')->__('Inactive'),
+              ),
+          ),
+      ));
+
+      if ( Mage::getSingleton('adminhtml/session')->getevoqueparallaxData() )
+      {
+          $form->setValues(Mage::getSingleton('adminhtml/session')->getevoqueparallaxData());
+          Mage::getSingleton('adminhtml/session')->setevoqueparallaxData(null);
+      } elseif ( Mage::registry('evoqueparallax_data') ) {
+          $form->setValues(Mage::registry('evoqueparallax_data')->getData());
+      }
+      return parent::_prepareForm();
+  }
+}

@@ -1,0 +1,355 @@
+/*
+ATTENTION! changes in this css file will be overwritten. If you want to change this template change file  /app/design/frontend/base/default/template/etheme/evoque/cssrefresh/colors.phtml
+*/
+<?php
+$store=Mage::registry('store_for_css')
+?>
+/***************General***************/
+/*text color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/text_color',$store)): ?>
+    body{ color:<?php echo $temp ?>}
+<?php endif; ?>
+
+/*link color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/link_color',$store)): ?>
+    a{ color:<?php echo $temp ?>}
+<?php endif; ?>
+
+/*link hover color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/link_hover_color',$store)): ?>
+    a:hover{ color:<?php echo $temp ?>}
+<?php endif; ?>
+
+/*Background Color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/background_color',$store)): ?>
+    body,#SideColumn.fix,#SpyPanel {background-color: <?php echo $temp?>;}
+<?php endif; ?>
+
+
+/*Background Image*/
+<?php
+$temp = Mage::getStoreConfig('evoquecolors/general/background_image',$store);
+if (!empty($temp)) {
+    ?>
+body {
+background-image: url("<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'evoque/' . $temp?>");
+<?php
+    switch (Mage::getStoreConfig('evoquecolors/general/background_image_display_mode',$store)) {
+        case 'center':
+            ?> background-position: center top; background-repeat: no-repeat; <?php break;
+        case 'no-repeat':
+            ?> background-attachment: fixed; background-position: center top; background-repeat: no-repeat;<?php break;
+    }
+    ?>
+
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation:portrait) {
+body {
+background-image: none !important;
+}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation:landscape) {
+body {
+background-image: none !important;
+}
+}
+<?php unset ($temp);
+} ?>
+
+
+/*Separator*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/separator',$store)): ?>
+    #CenterColumn{ border-left: 1px solid <?php echo $temp?>;}
+    #SpyPanel .btn-group > .btn{border-color: <?php echo $temp?>;}
+    .divider{border-bottom: 1px solid <?php echo $temp?>;}
+<?php endif; ?>
+
+/*Table border*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/table_border',$store)): ?>
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid <?php echo $temp?>;
+    }
+<?php endif; ?>
+
+/*Slider pagination*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/slider_pagination',$store)): ?>
+    .flex-control-paging li a.flex-active,.flex-control-paging li a:hover{
+    background: none repeat scroll 0 0 <?php echo $temp?>;
+    }
+<?php endif; ?>
+
+/*Left sidebar scroll*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/sidebar_scroll',$store)): ?>
+    .mCS-dark-thick > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background:<?php echo $temp?>;
+    }
+<?php endif; ?>
+
+/*Left sidebar scroll hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/sidebar_scroll_hover',$store)): ?>
+    .mCS-dark-thick > .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+    background:<?php echo $temp?>;
+    }
+<?php endif; ?>
+
+/*Carousel scroll*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/carousel_scroll',$store)): ?>
+    .mCS-product-scroll.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color:<?php echo $temp?>;
+    }
+<?php endif; ?>
+
+/*Carousel scroll hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/carousel_scroll_hover',$store)): ?>
+    .mCS-product-scroll.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+    background-color:<?php echo $temp?>;
+    }
+<?php endif; ?>
+
+/*Carousel track*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/carousel_track',$store)): ?>
+    .mCS-product-scroll > .mCSB_scrollTools .mCSB_draggerRail {
+    background: <?php echo $temp?>;
+    }
+<?php endif; ?>
+
+/*Search icons*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/search_icons',$store)): ?>
+    #SpyPanel .searchBoxContainer .searchButton, #SpyPanel .searchBoxContainer .searchButtonClose{
+    color:<?php echo $temp?>;
+    }
+<?php endif; ?>
+
+/*Social icons (footer)*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/general/social_icons',$store)): ?>
+    .social_icons i{
+    color:<?php echo $temp?>;
+    }
+<?php endif; ?>
+
+
+
+/***************Left Navigation Sidebar***************/
+/*bg color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/left_sidebar/bg_color',$store)): ?>
+    #LeftNavigation{ background-color:<?php echo $temp ?>}
+<?php endif; ?>
+
+/*link color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/left_sidebar/link_color',$store)): ?>
+    #LeftNavigation ul li.navigation_button {color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*link color hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/left_sidebar/link_color_hover',$store)): ?>
+    #LeftNavigation ul li.navigation_button:hover, #LeftNavigation ul li.navigation_button:hover i,#LeftNavigation ul li.navigation_button.active, #LeftNavigation ul li.navigation_button.active i {
+    color: <?php echo $temp ?>;
+    }
+<?php endif; ?>
+
+/***************Captions***************/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/captions/font',$store)): ?>
+    .font2,.block .block-title strong,h1, h2{font-family:'<?php echo  str_replace('+',' ',$temp) ?>'}
+    .product .font2{font-family:'Georgia' !important}
+<?php endif; ?>
+<?php if($temp=Mage::getStoreConfig('evoquecolors/captions/text_color',$store)): ?>
+    .font2,.block .block-title strong,h1, h2{color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+
+/***************Header***************/
+/*Text color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header/text_color',$store)): ?>
+#megamenu > li > a,#SpyPanel .btn-group > .btn{color: <?php echo $temp ?>;}
+<?php endif; ?>
+/*link color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header/link_color',$store)): ?>
+    .dropdown-menu > li > a,#SpyPanel #shopping_cart.btn-group .product-detailes .product-name,#SpyPanel #shopping_cart.btn-group .item .typcn{color: <?php echo $temp ?>;}
+<?php endif; ?>
+/*link color hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header/link_hover_color',$store)): ?>
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:hover,.dropdown-menu > li > a:hover{color: <?php echo $temp ?>;}
+<?php endif; ?>
+/*link background color hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header/link_bg_hover_color',$store)): ?>
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:hover,.dropdown-menu > li > a:hover{background-color: <?php echo $temp ?>;}
+<?php endif; ?>
+/*link background color hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header/background_color_boxes',$store)): ?>
+    #SpyPanel .btn-group:hover .dropdown-menu{background-color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+
+/*background color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header/background_color',$store)): ?>
+    #SpyPanel,#PageLogo{background-color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*Background Image*/
+<?php
+$temp = Mage::getStoreConfig('evoquecolors/header/background_image',$store);
+if (!empty($temp)) {
+    ?>
+#SpyPanel,#PageLogo{
+background-image: url("<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'evoque/' . $temp?>");
+
+}
+
+<?php unset ($temp);
+} ?>
+
+
+
+/*Caret*/
+<?php
+$temp = Mage::getStoreConfig('evoquecolors/header/caret_image',$store);
+if (!empty($temp)) {
+    ?>
+#SpyPanel .btn-group .caret {
+background-image: url("<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'evoque/' . $temp?>");
+}
+
+<?php unset ($temp);
+} ?>
+
+
+
+/*link color cart*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header/link_color_cart',$store)): ?>
+    #SpyPanel #shopping_cart.btn-group .product-detailes .product-name,#SpyPanel #shopping_cart.btn-group .item .typcn{color: <?php echo $temp ?>;}
+<?php endif; ?>
+/*link color hover cart*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header/link_hover_color_cart',$store)): ?>
+    #SpyPanel #shopping_cart.btn-group .product-detailes .product-name:hover,#SpyPanel #shopping_cart.btn-group .item a.typcn:hover{color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/***************Buttons***************/
+/*Text color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/buttons/text_color',$store)): ?>
+    a.back-link,.btn-default,button.button{color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*Text color hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/buttons/text_color_hover',$store)): ?>
+    a.back-link:hover,.btn-default:hover,button.button:hover{color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*Bg color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/buttons/background_color',$store)): ?>
+    .back-link a,a.back-link,.btn-default,button.button{background-color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*Bg color hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/buttons/background_color_hover',$store)): ?>
+    .back-link a:hover,a.back-link:hover,.btn-default:hover,button.button:hover{background-color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/***************Navigation***************/
+/*Link Color 0-level*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/link_color_level_0',$store)): ?>
+    ul#collapsed-menu > li > label.nav-header > a{color: <?php echo $temp ?>;}
+<?php endif; ?>
+/*Link Color 0-level hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/link_color_level_0_hover',$store)): ?>
+    ul#collapsed-menu > li > label.nav-header > a:hover{color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*Link Color 1-level*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/link_color_level_1',$store)): ?>
+    ul#collapsed-menu > li > ul > li > label.nav-header > a{color: <?php echo $temp ?>;}
+<?php endif; ?>
+/*Link Color 1-level hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/link_color_level_1_hover',$store)): ?>
+    ul#collapsed-menu > li > ul > li > label.nav-header > a:hover{color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+
+/*Link Color 2-level*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/link_color_level_2',$store)): ?>
+    ul#collapsed-menu > li > ul > li > ul > li > label > a{color: <?php echo $temp ?>;}
+<?php endif; ?>
+/*Link Color 2-level hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/link_color_level_2_hover',$store)): ?>
+    ul#collapsed-menu > li > ul > li > ul > li > label > a:hover{color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*Link Color 3-level*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/link_color_level_3',$store)): ?>
+    ul#collapsed-menu > li > ul > li > ul > li > ul > li > label > a{color: <?php echo $temp ?>;}
+<?php endif; ?>
+/*Link Color 3-level hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/link_color_level_3_hover',$store)): ?>
+    ul#collapsed-menu > li > ul > li > ul > li > ul > li > label > a:hover{color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*Link Color 4-level*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/link_color_level_4',$store)): ?>
+    ul#collapsed-menu > li > ul > li > ul > li > ul > li > ul > li > label > a{color: <?php echo $temp ?>;}
+<?php endif; ?>
+/*Link Color 4-level hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/link_color_level_4_hover',$store)): ?>
+    ul#collapsed-menu > li > ul > li > ul > li > ul > li > ul > li > label > a:hover{color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*+-*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/open_close',$store)): ?>
+    #collapsed-menu .nav-header span.collapse_button{color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*separator*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/header_navigation/separator',$store)): ?>
+    #collapsed-menu li,#collapsed-menu .nav-list{border-color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/***************Products***************/
+/*sale lable*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/products/sale_lable',$store)): ?>
+    .product .label_sale .pull-left{  background-color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*sale lable*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/products/new_lable',$store)): ?>
+    .product .label_new{  background-color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*discount lable*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/products/discount_lable',$store)): ?>
+    .product .label_sale .pull-left.percent{  background-color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*button*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/products/button',$store)): ?>
+    .product .buttons a{  background: <?php echo $temp ?>;}
+<?php endif; ?>
+/*button hover*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/products/button_hover',$store)): ?>
+    .product .buttons a:hover,.product .buttons a:first-child, .product .buttons.one-half a:first-child, .product .buttons.one-third a:first-child, .product .buttons.one-fourth a:first-child, .product.one-fifth .buttons a:first-child, .product.one-sixth .buttons a:first-child{  background: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*price*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/products/regular_price',$store)): ?>
+    .price{  color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/*special price*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/products/special_price',$store)): ?>
+    .special-price .price{  color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+/***************Footer***************/
+
+/*link color*/
+<?php if($temp=Mage::getStoreConfig('evoquecolors/footer/link_color',$store)): ?>
+    #BottomLinks ul li a{  color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+<?php if($temp=Mage::getStoreConfig('evoquecolors/footer/link_hover_color',$store)): ?>
+    #BottomLinks ul li a:hover{  color: <?php echo $temp ?>;}
+<?php endif; ?>
+
+<?php if($temp=Mage::getStoreConfig('evoquecolors/footer/text_color',$store)): ?>
+    #footer{  color: <?php echo $temp ?>;}
+<?php endif; ?>

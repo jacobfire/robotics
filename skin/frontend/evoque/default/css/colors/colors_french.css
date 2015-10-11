@@ -1,0 +1,211 @@
+/*
+ATTENTION! changes in this css file will be overwritten. If you want to change this template change file  /app/design/frontend/base/default/template/etheme/evoque/cssrefresh/colors.phtml
+*/
+/***************General***************/
+/*text color*/
+    body{ color:#000000}
+
+/*link color*/
+    a{ color:#000000}
+
+/*link hover color*/
+    a:hover{ color:#000000}
+
+/*Background Color*/
+
+
+/*Background Image*/
+body {
+background-image: url("http://localhost/evoque.com/media/evoque/stores/3/bg_city.jpg");
+ background-attachment: fixed; background-position: center top; background-repeat: no-repeat;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation:portrait) {
+body {
+background-image: none !important;
+}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation:landscape) {
+body {
+background-image: none !important;
+}
+}
+
+
+/*Separator*/
+    #CenterColumn{ border-left: 1px solid #eeeeee;}
+    #SpyPanel .btn-group > .btn{border-color: #eeeeee;}
+    .divider{border-bottom: 1px solid #eeeeee;}
+
+/*Table border*/
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #eeeeee;
+    }
+
+/*Slider pagination*/
+    .flex-control-paging li a.flex-active,.flex-control-paging li a:hover{
+    background: none repeat scroll 0 0 #0084e3;
+    }
+
+/*Left sidebar scroll*/
+    .mCS-dark-thick > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background:#a9dbff;
+    }
+
+/*Left sidebar scroll hover*/
+    .mCS-dark-thick > .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+    background:#0084e3;
+    }
+
+/*Carousel scroll*/
+    .mCS-product-scroll.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color:#0084e3;
+    }
+
+/*Carousel scroll hover*/
+    .mCS-product-scroll.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+    background-color:#a9dbff;
+    }
+
+/*Carousel track*/
+    .mCS-product-scroll > .mCSB_scrollTools .mCSB_draggerRail {
+    background: #e2e2e2;
+    }
+
+/*Search icons*/
+    #SpyPanel .searchBoxContainer .searchButton, #SpyPanel .searchBoxContainer .searchButtonClose{
+    color:#0084e3;
+    }
+
+/*Social icons (footer)*/
+    .social_icons i{
+    color:#0084e3;
+    }
+
+
+
+/***************Left Navigation Sidebar***************/
+/*bg color*/
+    #LeftNavigation{ background-color:#0084e3}
+
+/*link color*/
+    #LeftNavigation ul li.navigation_button {color: #a9dbff;}
+
+/*link color hover*/
+    #LeftNavigation ul li.navigation_button:hover, #LeftNavigation ul li.navigation_button:hover i,#LeftNavigation ul li.navigation_button.active, #LeftNavigation ul li.navigation_button.active i {
+    color: #ffffff;
+    }
+
+/***************Captions***************/
+    .font2,.block .block-title strong,h1, h2{font-family:'Great Vibes'}
+    .product .font2{font-family:'Georgia' !important}
+    .font2,.block .block-title strong,h1, h2{color: #000000;}
+
+
+/***************Header***************/
+/*Text color*/
+#megamenu > li > a,#SpyPanel .btn-group > .btn{color: #000000;}
+/*link color*/
+    .dropdown-menu > li > a,#SpyPanel #shopping_cart.btn-group .product-detailes .product-name,#SpyPanel #shopping_cart.btn-group .item .typcn{color: #575757;}
+/*link color hover*/
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:hover,.dropdown-menu > li > a:hover{color: #ffffff;}
+/*link background color hover*/
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:hover,.dropdown-menu > li > a:hover{background-color: #0084e3;}
+/*link background color hover*/
+
+
+/*background color*/
+    #SpyPanel,#PageLogo{background-color: #ffffff;}
+
+/*Background Image*/
+
+
+
+/*Caret*/
+#SpyPanel .btn-group .caret {
+background-image: url("http://localhost/evoque.com/media/evoque/default/caret.png");
+}
+
+
+
+
+/*link color cart*/
+/*link color hover cart*/
+
+/***************Buttons***************/
+/*Text color*/
+    a.back-link,.btn-default,button.button{color: #ffffff;}
+
+/*Text color hover*/
+    a.back-link:hover,.btn-default:hover,button.button:hover{color: #ffffff;}
+
+/*Bg color*/
+    .back-link a,a.back-link,.btn-default,button.button{background-color: #0084e3;}
+
+/*Bg color hover*/
+    .back-link a:hover,a.back-link:hover,.btn-default:hover,button.button:hover{background-color: #0999e9;}
+
+/***************Navigation***************/
+/*Link Color 0-level*/
+    ul#collapsed-menu > li > label.nav-header > a{color: #000000;}
+/*Link Color 0-level hover*/
+    ul#collapsed-menu > li > label.nav-header > a:hover{color: #000000;}
+
+/*Link Color 1-level*/
+    ul#collapsed-menu > li > ul > li > label.nav-header > a{color: #575757;}
+/*Link Color 1-level hover*/
+    ul#collapsed-menu > li > ul > li > label.nav-header > a:hover{color: #575757;}
+
+
+/*Link Color 2-level*/
+    ul#collapsed-menu > li > ul > li > ul > li > label > a{color: #959595;}
+/*Link Color 2-level hover*/
+    ul#collapsed-menu > li > ul > li > ul > li > label > a:hover{color: #959595;}
+
+/*Link Color 3-level*/
+    ul#collapsed-menu > li > ul > li > ul > li > ul > li > label > a{color: #000000;}
+/*Link Color 3-level hover*/
+    ul#collapsed-menu > li > ul > li > ul > li > ul > li > label > a:hover{color: #000000;}
+
+/*Link Color 4-level*/
+    ul#collapsed-menu > li > ul > li > ul > li > ul > li > ul > li > label > a{color: #575757;}
+/*Link Color 4-level hover*/
+    ul#collapsed-menu > li > ul > li > ul > li > ul > li > ul > li > label > a:hover{color: #575757;}
+
+/*+-*/
+    #collapsed-menu .nav-header span.collapse_button{color: #000000;}
+
+/*separator*/
+    #collapsed-menu li,#collapsed-menu .nav-list{border-color: #eeeeee;}
+
+/***************Products***************/
+/*sale lable*/
+    .product .label_sale .pull-left{  background-color: #d44444;}
+
+/*sale lable*/
+    .product .label_new{  background-color: #a4b3b5;}
+
+/*discount lable*/
+    .product .label_sale .pull-left.percent{  background-color: #c8c8c8;}
+
+/*button*/
+    .product .buttons a{  background: #c8c8c8;}
+/*button hover*/
+    .product .buttons a:hover,.product .buttons a:first-child, .product .buttons.one-half a:first-child, .product .buttons.one-third a:first-child, .product .buttons.one-fourth a:first-child, .product.one-fifth .buttons a:first-child, .product.one-sixth .buttons a:first-child{  background: #0084e3;}
+
+/*price*/
+    .price{  color: #000000;}
+
+/*special price*/
+    .special-price .price{  color: #d44444;}
+
+/***************Footer***************/
+
+/*link color*/
+    #BottomLinks ul li a{  color: #000000;}
+
+    #BottomLinks ul li a:hover{  color: #000000;}
+
+    #footer{  color: #000000;}

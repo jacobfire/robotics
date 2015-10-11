@@ -1,0 +1,67 @@
+<?php
+    $slides = $this->getDataSlides();
+    $fixed=false;
+    if(Mage::getStoreConfig('buyshopflex/options/width')=='fixed')$fixed=true;
+    if(count($slides)):
+?>
+    <!--SLIDER FLEX-->
+    <div class="flexslider-container hidden-xs hidden-sm">
+        <div class="flexslider">
+            <ul class="slides">
+                <?php
+                $i=0;
+                $first=1;
+                foreach($slides as $slide)
+                {
+                    if(!$i)$first=$slide['slide_id'];
+                    $i++;
+                    ?>
+                    <li>
+                        <?php if($temp=$slide['caption']): ?>
+                        <div class="flex-caption">
+                            <?php echo $temp?>
+                        </div>
+                        <?php endif;?>
+                        <div class="flex-image-outer "><a href="<?php echo $slide['link'];?>"><img src="<?php echo Mage::getBaseUrl('media') . $slide['image'];?>"  alt=""/></a></div>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function slider_ini()
+        {
+            var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+            // calculate bootstraps grid width
+            var col_width = jQuery('#test_col').outerWidth();
+            var row_width_b = jQuery('#test_row').outerWidth();
+            var row_width = Math.round(row_width_b / col_width) * col_width;
+            if (row_width > row_width_b) {
+                row_width = row_width_b;
+            }
+            if (windowWidth > 640) {
+                // initialize slider on index page
+                jQuery('.flexslider').flexslider({
+                    animation: "<?php echo Mage::getStoreConfig('evoqueflex/options/animation')?>",
+                    animationLoop: true,
+                    mousewheel: false,
+                    directionNav: false,
+                    slideshowSpeed: <?php echo Mage::getStoreConfig('evoqueflex/options/slideshowspeed')?>,
+                    animationSpeed: <?php echo Mage::getStoreConfig('evoqueflex/options/animationspeed')?>,
+                    itemWidth: row_width,
+                    itemMargin: 0
+                });
+            }
+        }
+        jQuery(document).ready(function () {
+            slider_ini();
+        })
+        jQuery(window).resize(function () {
+            slider_ini();
+        })
+
+    </script>
+    <!--SLIDER FLEX EOF-->
+<?php endif;?>
+

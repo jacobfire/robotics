@@ -1,0 +1,1602 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <evoque>
+            <label>Evoque</label><sort_order>0</sort_order>
+        </evoque>
+    </tabs>
+    <sections>
+        <evoqueconfig>
+            <tab>evoque</tab>
+            <label>Theme settings</label>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <run translate="label">
+                    <label></label>
+
+                    <frontend_type>button</frontend_type>
+                    <frontend_model>evoqueconfig/adminhtml_fields_csscolors</frontend_model>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </run>
+                <options>
+                    <label>Options</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <image_rollover_mode>
+                            <label>Image rollover mode</label>
+                            <comment>Choose rollover effect.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_rollover_mode>
+
+                        <image_rollover_sort>
+                            <depends>
+                                <image_rollover_mode>1</image_rollover_mode>
+                            </depends>
+                            <label>Sort of second image</label>
+                            <comment>Every image in product has 'Sort' attribute</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_rollover_sort>
+
+
+                        <quick_view>
+                            <label>Quick view</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </quick_view>
+                        <responsive>
+                            <label>Responsive html</label>
+                            <comment>Enable/disable responsive mode for all gadget (iphone, ipad etc)</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </responsive>
+                        <catalog_mode>
+                            <label>Catalog mode</label>
+                            <comment>Create your shopping cart into simple catalog</comment>
+                            <tooltip>This mode turns off add to cart buttons, account profile and cart functionality</tooltip>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catalog_mode>
+                        <ajax_add_to_cart>
+                            <label>Ajax add to cart</label>
+                            <comment>Add to cart without render of the page</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ajax_add_to_cart>
+                        <ajax_wish_comp>
+                            <label>Ajax for add to wishlist/compare button</label>
+                            <comment>Enable Ajax feature for wish list and compare buttons</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ajax_wish_comp>
+                        <ajax_toolbar>
+                            <label>Ajax for toolbar/paging</label>
+                            <comment>Enable Ajax feature for sort / paging buttons</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ajax_toolbar>
+                        <price_slider>
+                            <label>Price Slider</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <ajax_toolbar>1</ajax_toolbar>
+                            </depends>
+                        </price_slider>
+
+                        <!--<ajax_toolbar>
+                            <label>Ajax for toolbar/paging</label>
+                            <comment>Enable Ajax feature for sort / paging buttons</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ajax_toolbar>-->
+                        <!--<keep_image_aspect_ratio>
+                            <label>Keep Image Aspect Ratio</label>
+                            <comment>Height will be automatically calculated based on the width</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </keep_image_aspect_ratio>-->
+
+                        <show_add_to_cart>
+                            <label>Show add to cart button on product rollover</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_add_to_cart>
+
+                        <show_add_to_wishlist>
+                            <label>Show add to wishlist button on product rollover</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_add_to_wishlist>
+
+                        <show_add_to_compare>
+                            <label>Show add to compare button on product rollover</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_add_to_compare>
+
+                        <show_compare_link_in_header>
+                            <label>Show compare link in header toplinks</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_compare_link_in_header>
+
+                        <show_back_to_top>
+                            <label>Show Back To Top Button</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_back_to_top>
+
+                        <shop_by_accordion>
+                            <label>Show 'Shop By' filter as accordion</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </shop_by_accordion>
+
+
+
+
+
+
+
+                    </fields>
+                </options>
+
+                <megamenu>
+                    <label>Megamenu</label>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <megamenu>
+                            <label>Hide Megamenu in Header</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </megamenu>
+                        <html_block_above_menu>
+                            <depends>
+                                <megamenu>0</megamenu>
+                            </depends>
+                            <label>Html block above menu</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </html_block_above_menu>
+                        <html_block_under_menu>
+                            <depends>
+                                <megamenu>0</megamenu>
+                            </depends>
+                            <label>Html block under menu</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </html_block_under_menu>
+                        <bs_count_columns>
+                            <depends>
+                                <megamenu>0</megamenu>
+                            </depends>
+                            <label>Count of columns</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bs_count_columns>
+                    </fields>
+                </megamenu>
+
+
+                <product_labels>
+                    <label>Product labels</label>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <show_sale_label>
+                            <label>Show "Sale" label</label>
+                            <comment>Show sale label on products</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_sale_label>
+
+                        <discount_label>
+                            <label>Show discount label</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </discount_label>
+                        <show_new_label>
+                            <label>Show "New" label</label>
+                            <comment>Show new label on products</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_new_label>
+                    </fields>
+                </product_labels>
+                <social_accounts>
+                    <label>Social accounts</label>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+
+                        <heading_facebook translate="label">
+                            <label>Facebook Fan box</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_facebook>
+
+                        <facebook_profile_name>
+                            <label>Facebook profile name</label>
+                            <comment>Account ID for Facebook fan box. If you want use your own facebook code - do changes in file app/design/frontend/evoque/default/template/evoque/facebook_fan_box.phtml</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_profile_name>
+
+                        <heading_twitter translate="label">
+                            <label> <![CDATA[<span style="color:#00A0D1">Twitter feeds</span>]]></label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_twitter>
+
+                        <twitter_account>
+                            <label>Account name</label>
+                            <comment>Account name for twitter block.  If you want use your own twitter code - do changes in file /app/design/frontend/evoque/default/template/evoque/twitter_feeds.phtml</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </twitter_account>
+
+                        <twitter_feeds_count>
+                            <label>Count of tweets</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </twitter_feeds_count>
+
+
+
+
+
+
+
+
+                    </fields>
+                </social_accounts>
+
+            </groups>
+        </evoqueconfig>
+
+
+
+        <evoquelayout>
+            <tab>evoque</tab>
+            <label>Theme layout</label>
+            <sort_order>3</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+
+                <options>
+                    <label>Options</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+
+                        <heading_product_page translate="label">
+                            <label>Product page</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_product_page>
+
+                        <product_page>
+                            <label>Enable Alternative Product Page</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_page>
+
+                        <product_listing>
+                            <label>Product Listing</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>evoqueconfig/fields_source_productlisting</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_listing>
+
+
+
+
+
+                        <heading_slideshow translate="label">
+                            <label>Slideshow</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_slideshow>
+
+                        <slideshow>
+                            <label>Show slideshow</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slideshow>
+
+
+
+                        <slideshow_static_block>
+                            <depends>
+                                <slideshow>0</slideshow>
+                            </depends>
+                            <label>Choose static html block instead of slideshow</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>evoqueconfig/fields_source_block</source_model>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slideshow_static_block>
+
+                        <slider>
+                            <depends>
+                                <slideshow>1</slideshow>
+                            </depends>
+                            <label>Slider</label>
+                            <comment>
+                                <![CDATA[
+                                Choose slider type.<br />
+                                Flex is simple, fully responsive slider.<br />
+                                Parallax is layered slider. You can create slides with unlimited layres.
+                                ]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>evoqueconfig/fields_source_slider</source_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slider>
+
+
+
+
+                    </fields>
+                </options>
+
+                <sidebar>
+                    <label>Enable/Disable  blocks</label>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <heading_header translate="label">
+                            <label>Header</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_header>
+
+                        <my_cart>
+                            <label>Hide 'header shopping cart'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </my_cart>
+
+                        <currency>
+                            <label>Hide 'Currency'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </currency>
+
+                        <language>
+                            <label>Hide 'Language'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </language>
+
+                        <store>
+                            <label>Hide 'Select Store'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </store>
+
+                        <toplinks>
+                            <label>Hide 'Toplinks' (My account)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </toplinks>
+
+                        <toplinks_block>
+                            <depends>
+                                <toplinks>1</toplinks>
+                            </depends>
+                            <comment><![CDATA[<b style="color:red">Important!</b> Choose ready example block 'Evoque Custom Toplinks'. If you have no this block then you need to do import cms blocks ]]></comment>
+                            <label>Choose static html block instead of 'Toplinks'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>evoqueconfig/fields_source_block</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </toplinks_block>
+
+                        <search>
+                            <label>Hide 'Search'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </search>
+
+
+
+
+                        <heading_sidebar translate="label">
+                            <label>Left Sidebar</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_sidebar>
+
+                        <shop_by>
+                            <label>Hide 'Shop by'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </shop_by>
+
+                        <popular_tags>
+                            <label>Hide 'Popular Tags'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </popular_tags>
+
+
+
+                        <compare>
+                            <label>Hide 'Compare Products'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </compare>
+
+                        <community_poll>
+                            <label>Hide 'Poll'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </community_poll>
+
+                        <navigation>
+                            <label>Hide 'Navigation'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </navigation>
+
+                        <custom_html>
+                            <label>Hide 'Custom Html' for category</label>
+                            <comment>CMS/Static Blocks - ev_sidebar_custom_html</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom_html>
+
+                        <custom_html_product>
+                            <label>Hide 'Product Html Block' for product</label>
+                            <comment>CMS/Static Blocks - ev_sidebar_custom_html_product</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom_html_product>
+
+                        <about>
+                            <label>Hide 'About'</label>
+                            <comment>CMS/Static Blocks - ev_sidebar_about</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </about>
+
+                        <blog>
+                            <label>Hide 'blog/news'</label>
+                            <comment>CMS/Static Blocks - ev_sidebar_blog</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </blog>
+
+                        <socials>
+                            <label>Hide 'Socials Profiles'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>17</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </socials>
+
+                        <socials_twitter>
+                            <depends>
+                                <socials>0</socials>
+                            </depends>
+                            <label>Hide 'Twitter feeds' in 'Socials Profiles'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>18</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </socials_twitter>
+
+                        <socials_fb>
+                            <depends>
+                                <socials>0</socials>
+                            </depends>
+                            <label>Hide 'Facebook Fan Box' in 'Socials Profiles'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>19</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </socials_fb>
+
+
+                        <contact>
+                            <label>Hide 'Contact Info'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </contact>
+
+                        <viewed>
+                            <label>Hide 'Recently Viewed'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </viewed>
+
+                        <related>
+                            <label>Hide 'Related' (product page)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>22</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </related>
+
+                        <upsells>
+                            <label>Hide 'Upsell' (product page)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>23</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upsells>
+
+                        <crosselss>
+                            <label>Hide 'Cross sells' (shopping cart)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>24</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </crosselss>
+
+                        <wishlist>
+                            <label>Hide 'Wishlist' (sidebar)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </wishlist>
+
+
+
+                        <heading_footer translate="label">
+                            <label>Footer</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>26</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_footer>
+
+                        <newsletter>
+                            <label>Hide 'Newsletter'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>27</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </newsletter>
+
+
+                        <newsletter_block>
+                            <depends>
+                                <newsletter>1</newsletter>
+                            </depends>
+                            <label>Choose static html block instead of 'Newsletter'</label>
+                            <comment><![CDATA[<b style="color:red">Important!</b> Choose ready example block 'Custom block instead of Newsletter'. If you have no this block then you need to do import cms blocks ]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>evoqueconfig/fields_source_block</source_model>
+                            <sort_order>28</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </newsletter_block>
+
+
+                        <find_us>
+                            <label>Hide 'Find Us'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>29</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </find_us>
+
+                        <footer_links>
+                            <label>Hide 'Footer links'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_links>
+
+                        <footer_links_visible>
+                            <depends>
+                                <footer_links>0</footer_links>
+                            </depends>
+                            <label>Show footer links permanently</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>31</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_links_visible>
+
+
+
+
+
+
+                    </fields>
+                </sidebar>
+
+            </groups>
+        </evoquelayout>
+
+        <evoquecolors>
+            <tab>evoque</tab>
+            <label>Theme colors</label>
+            <sort_order>2</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <run translate="label">
+                    <label>Run now</label>
+                    <comment><![CDATA[
+                    <br /><b color="red">ATTENTION!</b> Be sure that folder /skin/frontend/evoque/default/css/colors has 777 permission. After click on 'Save Config' click 'Refresh css files'. After this you will be able to see changes on storefront.
+                    <br /><br />]]></comment>
+                    <frontend_type>button</frontend_type>
+                    <frontend_model>evoqueconfig/adminhtml_fields_cssupdate</frontend_model>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </run>
+
+                <general>
+                    <label>General</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+
+                        <skin_suffix>
+                            <label>Skin suffix</label>
+                            <comment>!IMPORTANT! DO NOT CHANGE THAT FIELD</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </skin_suffix>
+
+                        <custom_css>
+                            <label>Use custom css file</label>
+                            <comment>To use custom css file you must rename file skin/frontend/evoque/default/css/DELETE-PREFIXcustom_changes.css to custom_changes.css (remove just prefix 'DELETE-PREFIX')</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom_css>
+
+                        <text_color>
+                            <label>Text Color</label>
+                            <comment>Set default text color for all blocks</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_color>
+                        <link_color>
+                            <label>Link Color</label>
+                            <comment>Set default link color for all blocks</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color>
+                        <link_hover_color>
+                            <label>Link Hover Color</label>
+                            <comment>Set default link hover color for all blocks</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_hover_color>
+                        <background_color>
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </background_color>
+
+                        <background_image>
+                            <label>Background Image (All pages)</label>
+                            <comment>Upload background image/pattern for all blocks (JPG, PNG or GIF image)</comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="evoque" scope_info="1">evoque</upload_dir>
+                            <base_url type="media" scope_info="1">evoque</base_url>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </background_image>
+                        <background_image_display_mode>
+                            <label>Background Image display mode</label>
+                            <comment>Set background image display mode</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>evoqueconfig/fields_source_bgposition2</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </background_image_display_mode>
+
+                        <separator>
+                            <label>Separator</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </separator>
+
+                        <table_border>
+                            <label>Table border</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </table_border>
+
+                        <slider_pagination>
+                            <label>Slider pagination</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slider_pagination>
+
+                        <sidebar_scroll>
+                            <label>Left sidebar scroll</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sidebar_scroll>
+
+                        <sidebar_scroll_hover>
+                            <label>Left sidebar scroll hover</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>17</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sidebar_scroll_hover>
+
+                        <carousel_scroll>
+                            <label>Carousel scroll</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>18</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </carousel_scroll>
+
+                        <carousel_scroll_hover>
+                            <label>Carousel scroll hover</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>19</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </carousel_scroll_hover>
+
+                        <carousel_track>
+                            <label>Carousel track</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </carousel_track>
+
+                        <search_icons>
+                            <label>Search icons</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </search_icons>
+
+                        <social_icons>
+                            <label>Social icons (footer)</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>22</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </social_icons>
+
+
+
+
+                    </fields>
+                </general>
+
+                <left_sidebar>
+                    <label>Left Navigation Sidebar</label>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <bg_color>
+                            <label>Background color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bg_color>
+                        <link_color>
+                            <label>Link color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color>
+                        <link_color_hover>
+                            <label>Link color hover</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_hover>
+                    </fields>
+                </left_sidebar>
+
+
+                <captions>
+                    <label>Captions</label>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <font>
+                            <label>Font</label>
+                            <comment><![CDATA[Select font which will be used for headings, buttons, block titles etc. Theme use Google font's
+        library. Find out more here - <a target=_"blank" href="http://www.google.com/webfonts">Google web fonts free library</a>]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>evoqueconfig/fields_source_fonts</source_model>
+                            <frontend_model>evoqueconfig/adminhtml_fields_fonts</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </font>
+                        <text_color>
+                            <label>Text Color</label>
+                            <comment>Set text color for captions</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_color>
+                    </fields>
+                </captions>
+                <header>
+                    <label>Header</label>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <text_color>
+                            <label>Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_color>
+                        <background_color>
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </background_color>
+                        <background_image>
+                            <label>Background Image</label>
+                            <comment>Upload background image/pattern for all blocks (JPG, PNG or GIF image)</comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="evoque" scope_info="1">evoque</upload_dir>
+                            <base_url type="media" scope_info="1">evoque</base_url>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </background_image>
+                        <background_color_boxes>
+                            <label>Background Color Dropdowns</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </background_color_boxes>
+                        <heading_dropdown translate="label">
+                            <label>Dropdown boxes</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_dropdown>
+                        <link_color>
+                            <label>Link Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color>
+                        <link_hover_color>
+                            <label>Link Hover Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_hover_color>
+                        <link_bg_hover_color>
+                            <label>Link Background Hover Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_bg_hover_color>
+                        <caret_image>
+                            <label>Caret image</label>
+                            <comment>small arrow 5x3px</comment>
+                            <frontend_type>image</frontend_type>
+                            <upload_dir config="evoque" scope_info="1">evoque</upload_dir>
+                            <base_url type="media" scope_info="1">evoque</base_url>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </caret_image>
+
+
+
+                        <heading_cart translate="label">
+                            <label>Shopping cart</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_cart>
+
+                        <link_color_cart>
+                            <label>Link Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_cart>
+
+                        <link_hover_color_cart>
+                            <label>Link Hover Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_hover_color_cart>
+
+                    </fields>
+                </header>
+
+                <buttons>
+                    <label>Buttons</label>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <text_color>
+                            <label>Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_color>
+                        <text_color_hover>
+                            <label>Text Color Hover</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_color_hover>
+
+                        <background_color>
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </background_color>
+
+                        <background_color_hover>
+                            <label>Background Color Hover</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </background_color_hover>
+
+                    </fields>
+                </buttons>
+
+
+
+
+                <header_navigation>
+                    <label>Navigation</label>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+
+
+                        <link_color_level_0>
+                            <label>Link Color (level_0)</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_level_0>
+
+                        <link_color_level_0_hover>
+                            <label>Link Hover Color (level_0)</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_level_0_hover>
+
+
+
+                        <link_color_level_1>
+                            <label>Link Color (level_1)</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_level_1>
+
+                        <link_color_level_1_hover>
+                            <label>Link Hover Color (level_1)</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_level_1_hover>
+
+
+                        <link_color_level_2>
+                            <label>Link Color (level_2)</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_level_2>
+
+                        <link_color_level_2_hover>
+                            <label>Link Hover Color (level_2)</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_level_2_hover>
+
+
+                        <link_color_level_3>
+                            <label>Link Color (level_3)</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_level_3>
+
+                        <link_color_level_3_hover>
+                            <label>Link Hover Color (level_3)</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_level_3_hover>
+
+                        <link_color_level_4>
+                            <label>Link Color (level_4)</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_level_4>
+
+                        <link_color_level_4_hover>
+                            <label>Link Hover Color (level_4)</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color_level_4_hover>
+
+                        <open_close>
+                            <label>+ -</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </open_close>
+
+                        <separator>
+                            <label>Separator</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </separator>
+
+
+
+
+
+                    </fields>
+                </header_navigation>
+
+                <footer>
+                    <label>Footer</label>
+                    <sort_order>8</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <text_color>
+                            <label>Text Color</label>
+                            <comment>Set text color for footer block</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_color>
+                        <link_color>
+                            <label>Link Color</label>
+                            <comment>Set link color for footer block</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color>
+                        <link_hover_color>
+                            <label>Link Hover Color</label>
+                            <comment>Set link hover color for footer block</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_hover_color>
+
+                    </fields>
+                </footer>
+
+
+
+                <products>
+                    <label>Products</label>
+                    <sort_order>12</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <sale_lable>
+                            <label>Sale lable</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sale_lable>
+                        <new_lable>
+                            <label>New lable</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </new_lable>
+                        <discount_lable>
+                            <label>Discount lable</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </discount_lable>
+                        <button>
+                            <label>Button over product</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </button>
+                        <button_hover>
+                            <label>Button over product hover</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </button_hover>
+                        <regular_price>
+                            <label>Regular Price</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </regular_price>
+                        <special_price>
+                            <label>Special Price</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>evoqueconfig/adminhtml_fields_color</frontend_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </special_price>
+
+                    </fields>
+                </products>
+
+            </groups>
+        </evoquecolors>
+
+
+
+    </sections>
+</config>

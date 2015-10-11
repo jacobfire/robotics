@@ -1,0 +1,76 @@
+"currency","Währung"
+"language","Sprache"
+"Select Store","Store auswählen"
+"account","Mein Konto"
+"wishlist","Wunschzettel"
+"compare","Vergleichen"
+"Search...","Suchen ..."
+"SHOPPING CART","Warenkorb"
+"View Cart","Einkaufswagen "
+"Proceed to Checkout","Zur Kasse"
+"My Wishlist","Mein Wunschzettel"
+"My Wishlist (%d item)","Wunschzettel (%d)"
+"My Wishlist (%d items)","Wunschzettel (% d) "
+"My Cart","Mein Warenkorb"
+"My Cart (%s item)","Mein Warenkorb ( %s Artikel) "
+"My Cart (%s items)","Mein Warenkorb ( % s Artikel)"
+"Checkout","Kasse"
+"Log In","Anmelden"
+"Compare (0)","Vergleich (0)"
+"Compare (%d items)","vergleichen (%d Artikel)"
+"Compare (%d item)","vergleichen (% d Artikel)"
+"Starting at:","From:"
+"Quick View","Schnellansicht "
+"Newsleter","Newsleter"
+"Enter your e-mail...","Geben Sie Ihre E -Mail ... "
+
+
+"tags_popular","<i class='typcn typcn-cloud-storage'></i>Tags",
+"ev_sidebar_blog","<i class='typcn typcn-edit'></i> blog/news",
+"ev_sidebar_about","<i class='typcn typcn-group'></i> about",
+"ev_leftmenu","<i class='typcn typcn-th-menu'></i> Katalog",
+"pollleft","<i class='typcn typcn-chart-bar'></i>Wertung"
+"ev_sidebar_contacts","<i class='typcn typcn typcn-mail'></i> Kontaktinfo "
+"ev_social","<i class='typcn typcn-messages'></i> sozialen Profilen "
+"catalog.leftnav","<i class='typcn typcn-database'></i> Shop durch"
+"catalog.compare.sidebar","<i class='typcn typcn-chart-pie'></i> Vergleichen"
+"right.reports.product.viewed","<i class='typcn typcn-attachment'></i> gesehen"
+"ev_sidebar_custom_html","<i class='typcn typcn-puzzle-outline'></i> custom html block"
+"ev_sidebar_custom_html_product","<i class='typcn typcn-puzzle-outline'></i> product html block"
+"catalog.product.related","<i class='typcn typcn-book'></i>  related"
+"product.info.upsell","<i class='typcn typcn-shopping-bag'></i> upsell"
+"ev_product_gallery","<i class='typcn typcn-camera-outline'></i> gallery"
+"checkout.cart.crosssell","<i class='typcn typcn-flow-switch'></i> cross sells"
+"wishlist_sidebar","<i class='typcn typcn-heart-outline'></i> wishlist"
+"customer_account_navigation","<i class='typcn typcn-user'></i> account"
+"sale.reorder.sidebar","<i class='typcn typcn-arrow-sync'></i> reorder"
+"catalogsearch.leftnav","<i class='typcn typcn-database'></i> shop by"
+"checkout.progress.wrapper","<i class='typcn typcn-database'></i> checkout progress"
+
+
+
+
+"Upsell products","Up-sells"
+"You have no items in your shopping cart.","You have no items in your shopping cart."
+
+
+
+
+"Twitter","Twitter"
+"Facebook fan box","Facebook fan box"
+"New","NEW"
+"Sale","Sale"
+"No viewed products","No viewed products"
+"Shopping Options","SHOPPING OPTIONS"
+"Currently Shopping by:","CURRENTLY SHOPPING BY :"
+"Gallery","Gallery"
+"Compared","Compared"
+"Description","Description"
+"Reviews","Reviews"
+"Tags","Tags"
+"Custom tab in product content","Custom tab in product content"
+"New Customers","NEW CUSTOMERS"
+"loading tweets...","loading tweets..."
+"CHECKOUT DETAILS","CHECKOUT DETAILS"
+"ORDER COMPLETE","ORDER COMPLETE"
+"RETURN TO SHOP","RETURN TO SHOP"

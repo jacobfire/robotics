@@ -1,0 +1,23 @@
+<div  id="LeftNavigation" class="hidden-xs">
+    <ul>
+        <?php
+        $count=0;
+
+
+        if(Mage::app()->getLayout()->getBlock('left'))
+        {
+            foreach (Mage::app()->getLayout()->getBlock('left')->getSortedChildren() as $name) {
+
+                $block=$this->getLayout()->getBlock($name)->toHtml();
+                if(!empty($block))
+                {
+                    $count++;
+                ?>
+                <li id="Navigation_button_<?php echo str_replace('.','_',$name)?>" class="navigation_button <?php if($count==1)echo 'active'?>"><?php echo $this->__($name) ?></li>
+                <?php
+                }
+            }
+        }
+        ?>
+    </ul>
+</div>

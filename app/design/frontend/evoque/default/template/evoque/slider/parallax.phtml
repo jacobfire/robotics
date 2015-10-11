@@ -1,0 +1,33 @@
+<script type="text/javascript" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_JS); ?>etheme/evoque/jquery-transit-modified.js"></script>
+<script type="text/javascript" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_JS); ?>etheme/evoque/layerslider.transitions.js"></script>
+<script type="text/javascript" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_JS); ?>etheme/evoque/layerslider.kreaturamedia.jquery.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('#layerslider').layerSlider({
+            skinsPath : '<?php echo $this->getSkinUrl('css/parallax/')?>',
+            skin : 'minimal',
+            thumbnailNavigation : 'hover',
+            hoverPrevNext : true,
+            keybNav                 : false,
+            navPrevNext             : false,
+            navStartStop            : false,
+            navButtons              : true,
+            thumbnailNavigation     : 'disabled',
+            pauseOnHover : false,
+            showCircleTimer: false
+        });
+    });
+</script>
+<div class="hidden-xs hidden-sm">
+    <div id="layerslider-container">
+        <div id="layerslider" style="width: 2000px; height: 700px; margin: 0 auto;">
+            <?php
+            $slides = $this->getDataSlides();
+            foreach($slides as $slide)
+            {
+                echo str_replace(array('{{BASE}}media/',"<div class=\"ls-layer link\""), array(Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA), "<div class='ls-layer link' onClick=\"window.location='".$slide['link']."'\" "),$slide['slide_html_code']);
+            }
+            ?>
+        </div>
+    </div>
+</div>
